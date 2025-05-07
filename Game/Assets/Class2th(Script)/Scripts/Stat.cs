@@ -2,9 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Stat : MonoBehaviour
+public class Stat 
 {
-    int health;
-    int level;
-    string name;
+    private int health;
+    private int level;
+    private string name;
+
+    public int Level 
+    {
+        get { return level; } 
+        set { level = value; } 
+    }
+
+    public int Health { get { return health; } set { health = value; } }
+
+    public string Name { get { return name; } set { name = value; } }
+
 }
